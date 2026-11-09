@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Direct crawlers to sitemap
+Sitemap: https://manish2106-sys.github.io/sahabhagita-ngo/sitemap.xml
