@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate — Sahabhagita | Tax Deductible 80G</title>
+
+    <!-- ===== SECURITY HEADERS ===== -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   script-src 'self'; 
+                   style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; 
+                   font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; 
+                   img-src 'self' data:; 
+                   connect-src 'self'; 
+                   frame-src 'none'; 
+                   object-src 'none'; 
+                   base-uri 'self'; 
+                   form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- ===== SEO & OPEN GRAPH ===== -->
+    <meta name="description" content="Donate to Sahabhagita Shahri & Gramin Vikas Samiti. Support hands-on STEM innovation labs in government schools. All donations 100% tax exempt under Section 80G.">
+    <meta property="og:title" content="Donate to Sahabhagita — 80G Tax Exempt">
+    <meta property="og:description" content="Support education and livelihoods in Madhya Pradesh. Instant UPI, NetBanking, and 80G receipt generation.">
+    <meta property="og:image" content="images/logo_white.png">
+
+    <link rel="icon" type="image/png" href="images/logo_white.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLGPg8YJ04IY4YZ7C1GKVe1ELJmYZNemNkRnLZBWg9SH38Oy23Af+Eg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="donate.css">
+</head>
+<body class="donate-page">
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar scrolled" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Sahabhagita — Home">
+                <img src="images/logo_white.png" alt="Sahabhagita Logo" class="logo-img" width="44" height="48">
+                <div class="logo-text">
+                    <span class="logo-name">Sahabhagita</span>
+                    <span class="logo-tagline">Shahri &amp; Gramin Vikas Samiti</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="index.html#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="index.html#about" role="menuitem">About</a></li>
+                <li role="none"><a href="index.html#programs" role="menuitem">Programs</a></li>
+                <li role="none"><a href="index.html#impact" role="menuitem">Impact</a></li>
+                <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+                <li role="none"><a href="donate.html" class="nav-donate-btn active" role="menuitem">Donate Active</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HEADER BANNER ==================== -->
+    <header class="donate-hero">
+        <div class="container">
+            <span class="hero-label">80G TAX EXEMPT DONATION PORTAL</span>
+            <h1 class="donate-hero-title">Fuel Real Hands-On Change</h1>
+            <p class="donate-hero-subtitle">Every rupee goes directly towards building government school innovation labs, training rural makers, and equipping underserved youth with real hardware capabilities.</p>
+            
+            <div class="tax-badge-row">
+                <div class="tax-badge"><i class="fas fa-certificate" aria-hidden="true"></i> Section 80G: <strong>AACAS8949KF20214</strong></div>
+                <div class="tax-badge"><i class="fas fa-shield-alt" aria-hidden="true"></i> Section 12A: <strong>ITBA/EXM/S/12A/2021-22/1036077583(1)</strong></div>
+                <div class="tax-badge"><i class="fas fa-building" aria-hidden="true"></i> CSR-1: <strong>CSR00094897</strong></div>
+                <div class="tax-badge"><i class="fas fa-landmark" aria-hidden="true"></i> Darpan: <strong>MP/2025/0702269</strong></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN DONATION EXPERIENCE ==================== -->
+    <main class="donate-main-section">
+        <div class="container">
+            <div class="donation-grid">
+                
+                <!-- LEFT COLUMN: Step by step donation builder -->
+                <div class="donation-builder-col">
+                    
+                    <!-- STEP 1: Frequency -->
+                    <div class="donate-step-box">
+                        <div class="step-num-header">
+                            <span class="step-badge">1</span>
+                            <h3>Choose Donation Frequency</h3>
+                        </div>
+                        <div class="freq-toggle-group" role="radiogroup" aria-label="Donation frequency">
+                            <button type="button" class="freq-btn active" data-freq="one-time" aria-pressed="true">
+                                <i class="fas fa-heart" aria-hidden="true"></i> One-Time Gift
+                            </button>
+                            <button type="button" class="freq-btn" data-freq="monthly" aria-pressed="false">
+                                <i class="fas fa-sync-alt" aria-hidden="true"></i> Monthly Champion
+                            </button>
+                            <button type="button" class="freq-btn" data-freq="csr" aria-pressed="false">
+                                <i class="fas fa-briefcase" aria-hidden="true"></i> Corporate CSR
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Amount & Impact -->
+                    <div class="donate-step-box">
+                        <div class="step-num-header">
+                            <span class="step-badge">2</span>
+                            <h3>Select Your Impact Level</h3>
+                        </div>
+                        
+                        <div class="donation-tiers-grid" role="radiogroup" aria-label="Donation tier">
+                            <div class="tier-card" data-amount="500" role="radio" aria-checked="false" tabindex="0">
+                                <div class="tier-amount">₹500</div>
+                                <div class="tier-title">Starter Kit</div>
+                                <p class="tier-desc">Provides 1 learner with hands-on electronics components, breadboard &amp; tools for a month.</p>
+                            </div>
+
+                            <div class="tier-card" data-amount="2000" role="radio" aria-checked="false" tabindex="0">
+                                <div class="tier-amount">₹2,000</div>
+                                <div class="tier-title">Term Scholar</div>
+                                <p class="tier-desc">Funds a complete 4-month practical workbench curriculum &amp; trainer guidance for 1 student.</p>
+                            </div>
+
+                            <div class="tier-card popular active" data-amount="7000" role="radio" aria-checked="true" tabindex="0">
+                                <div class="popular-ribbon">Most Impactful</div>
+                                <div class="tier-amount">₹7,000</div>
+                                <div class="tier-title">Full Year Maker</div>
+                                <p class="tier-desc"><strong>Entire 1-year sponsorship:</strong> All lab costs, full 14-phase hardware curriculum, trainers &amp; maker showcase.</p>
+                            </div>
+
+                            <div class="tier-card" data-amount="20000" role="radio" aria-checked="false" tabindex="0">
+                                <div class="tier-amount">₹20,000</div>
+                                <div class="tier-title">School Workbench</div>
+                                <p class="tier-desc">Equips an entire school lab zone with digital multimeters, sensors, microcontrollers &amp; tools.</p>
+                            </div>
+                        </div>
+
+                        <div class="custom-amount-wrapper">
+                            <label for="activeCustomAmount"><strong>Or enter custom amount:</strong></label>
+                            <div class="custom-input-group">
+                                <span class="currency-prefix">₹</span>
+                                <input type="number" id="activeCustomAmount" placeholder="Enter custom amount (min ₹100)" min="100" max="10000000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: Payment Gateway & Methods -->
+                    <div class="donate-step-box">
+                        <div class="step-num-header">
+                            <span class="step-badge">3</span>
+                            <h3>Select Active Payment Method</h3>
+                        </div>
+
+                        <!-- Method Tabs -->
+                        <div class="payment-tabs" role="tablist">
+                            <button type="button" class="tab-btn active" data-tab="tab-upi" role="tab" aria-selected="true" aria-controls="tab-upi">
+                                <i class="fas fa-mobile-alt" aria-hidden="true"></i> Instant UPI / QR
+                            </button>
+                            <button type="button" class="tab-btn" data-tab="tab-bank" role="tab" aria-selected="false" aria-controls="tab-bank">
+                                <i class="fas fa-university" aria-hidden="true"></i> Bank Transfer (NEFT/IMPS)
+                            </button>
+                            <button type="button" class="tab-btn" data-tab="tab-csr" role="tab" aria-selected="false" aria-controls="tab-csr">
+                                <i class="fas fa-handshake" aria-hidden="true"></i> CSR Partnership
+                            </button>
+                        </div>
+
+                        <!-- TAB 1: UPI & DYNAMIC QR CODE -->
+                        <div class="tab-content active" id="tab-upi" role="tabpanel">
+                            <div class="upi-box-wrapper">
+                                <div class="upi-qr-column">
+                                    <div class="qr-container" id="qrContainer" aria-label="Dynamic UPI QR Code">
+                                        <!-- QR code generated by script -->
+                                        <div id="qrcode"></div>
+                                    </div>
+                                    <div class="qr-amount-indicator">Scan to pay: <span class="highlight-amt" id="qrAmountDisplay">₹7,000</span></div>
+                                    <div class="upi-apps-icons" aria-label="Supported UPI Apps">
+                                        <span class="app-chip"><i class="fab fa-google-pay" aria-hidden="true"></i> GPay</span>
+                                        <span class="app-chip">PhonePe</span>
+                                        <span class="app-chip">Paytm</span>
+                                        <span class="app-chip">BHIM</span>
+                                        <span class="app-chip">Cred</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="upi-details-column">
+                                    <div class="upi-id-card">
+                                        <span class="label">Official Sahabhagita VPA / UPI ID</span>
+                                        <div class="copy-field">
+                                            <code id="upiIdValue">Sahbhagita_ngo@rediffmail.com</code>
+                                            <button type="button" class="btn-copy" id="copyUpiBtn" aria-label="Copy UPI ID">
+                                                <i class="far fa-copy" aria-hidden="true"></i> Copy
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="mobile-pay-action">
+                                        <a href="upi://pay?pa=Sahbhagita_ngo@rediffmail.com&pn=Sahabhagita%20Shahri%20Gramin%20Vikas%20Samiti&am=7000&cu=INR&tn=Donation%20Pratham%20Pratibha" class="btn btn-primary btn-block btn-lg" id="directUpiAppBtn">
+                                            <i class="fas fa-bolt" aria-hidden="true"></i> Pay via Any UPI App
+                                        </a>
+                                        <small class="note-center">Tapping this opens Google Pay, PhonePe, Paytm, or BHIM directly on your mobile device.</small>
+                                    </div>
+
+                                    <div class="security-guarantee">
+                                        <i class="fas fa-lock" aria-hidden="true"></i> 100% verified direct transfer to NGO registered account. Zero intermediary commission.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 2: BANK TRANSFER DETAILS -->
+                        <div class="tab-content" id="tab-bank" role="tabpanel">
+                            <div class="bank-details-card">
+                                <p class="bank-intro">You can initiate a direct <strong>NEFT, RTGS, or IMPS</strong> transfer from your net-banking or mobile banking app using the official NGO account details below:</p>
+                                
+                                <div class="bank-spec-grid">
+                                    <div class="bank-spec-item">
+                                        <span class="spec-label">Account Name (Beneficiary)</span>
+                                        <div class="spec-value-row">
+                                            <span class="spec-value">Sahabhagita Shahri &amp; Gramin Vikas Samiti</span>
+                                            <button type="button" class="btn-copy-small" data-copy="Sahabhagita Shahri &amp; Gramin Vikas Samiti">Copy</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="bank-spec-item">
+                                        <span class="spec-label">Account Number</span>
+                                        <div class="spec-value-row">
+                                            <span class="spec-value"><strong>31962384751</strong></span>
+                                            <button type="button" class="btn-copy-small" data-copy="31962384751">Copy</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="bank-spec-item">
+                                        <span class="spec-label">IFSC Code</span>
+                                        <div class="spec-value-row">
+                                            <span class="spec-value"><strong>SBIN0003554</strong></span>
+                                            <button type="button" class="btn-copy-small" data-copy="SBIN0003554">Copy</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="bank-spec-item">
+                                        <span class="spec-label">Bank &amp; Branch</span>
+                                        <span class="spec-value">State Bank of India, Singrauli / Waidhan Branch (MP)</span>
+                                    </div>
+
+                                    <div class="bank-spec-item">
+                                        <span class="spec-label">Account Type</span>
+                                        <span class="spec-value">Savings / Institutional Non-Profit Account</span>
+                                    </div>
+
+                                    <div class="bank-spec-item">
+                                        <span class="spec-label">Permanent Account Number (PAN)</span>
+                                        <div class="spec-value-row">
+                                            <span class="spec-value"><strong>AACAS8949K</strong></span>
+                                            <button type="button" class="btn-copy-small" data-copy="AACAS8949K">Copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 3: CORPORATE CSR -->
+                        <div class="tab-content" id="tab-csr" role="tabpanel">
+                            <div class="csr-info-box">
+                                <h4>Corporate Social Responsibility (CSR) Partnership</h4>
+                                <p>Sahabhagita is fully compliant with <strong>Section 135 &amp; Schedule VII</strong> of the Companies Act, 2013, meeting all Item (ii) criteria for promoting education and employment-enhancing vocational skills.</p>
+                                
+                                <ul class="csr-credentials-list">
+                                    <li><strong>MCA CSR-1 Registration:</strong> CSR00094897 (Ministry of Corporate Affairs, SRN: AB5710340)</li>
+                                    <li><strong>Income Tax Exemption:</strong> Section 12A &amp; 80G perpetual clearance</li>
+                                    <li><strong>NITI Aayog Darpan:</strong> MP/2025/0702269</li>
+                                    <li><strong>Audited Track Record:</strong> Available for previous 3 fiscal years with Utilization Certificates (UC)</li>
+                                    <li><strong>Direct Contact for CSR Leads:</strong> Mr. Pramendra Kumar Singh (Secretary &amp; Program Director) at <a href="mailto:Sahbhagita_ngo@rediffmail.com">Sahbhagita_ngo@rediffmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4: Generate Instant 80G Receipt -->
+                    <div class="donate-step-box" id="receiptSection">
+                        <div class="step-num-header">
+                            <span class="step-badge">4</span>
+                            <h3>Generate Your Official 80G Tax Exemption Receipt</h3>
+                        </div>
+                        <p class="receipt-note">Complete your payment above, then enter your transaction details below to instantly generate and print your official Income Tax Section 80G deduction certificate.</p>
+                        
+                        <form id="receiptGeneratorForm" class="receipt-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="donorFullName">Full Legal Name (as per PAN) *</label>
+                                    <input type="text" id="donorFullName" required placeholder="e.g. Rajesh Sharma" maxlength="100">
+                                </div>
+                                <div class="form-group">
+                                    <label for="donorPanNumber">Donor PAN Card Number *</label>
+                                    <input type="text" id="donorPanNumber" required placeholder="ABCDE1234F" maxlength="10" style="text-transform: uppercase;">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="donorEmailAddr">Email Address (for Receipt Copy) *</label>
+                                    <input type="email" id="donorEmailAddr" required placeholder="your@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="donorPhoneNum">Mobile / WhatsApp Number *</label>
+                                    <input type="tel" id="donorPhoneNum" required placeholder="+91 98765 43210">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="donorTransactionRef">UPI Ref / UTR / Transaction ID *</label>
+                                    <input type="text" id="donorTransactionRef" required placeholder="e.g. 431289123456 or Bank Ref" maxlength="50">
+                                </div>
+                                <div class="form-group">
+                                    <label for="donorPostalAddress">Full Postal Address (for Tax Records) *</label>
+                                    <input type="text" id="donorPostalAddress" required placeholder="House/Flat, Street, City, PIN" maxlength="200">
+                                </div>
+                            </div>
+
+                            <!-- Honeypot -->
+                            <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                                <input type="text" id="check_trap" name="check_trap" tabindex="-1">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="generateReceiptBtn">
+                                <i class="fas fa-file-invoice" aria-hidden="true"></i> Generate &amp; Download 80G Receipt
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN: Impact, Trust & Transparency Dossier -->
+                <aside class="donation-sidebar-col">
+                    <div class="trust-card">
+                        <div class="trust-header">
+                            <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                            <h4>Where Your Donation Goes</h4>
+                        </div>
+                        <div class="unit-breakdown">
+                            <div class="breakdown-stat-row">
+                                <span class="breakdown-category">Innovation Labs &amp; Learner Hardware</span>
+                                <span class="breakdown-amount">₹2,900 (41%)</span>
+                            </div>
+                            <div class="breakdown-bar"><div class="fill" style="width: 41%;"></div></div>
+
+                            <div class="breakdown-stat-row">
+                                <span class="breakdown-category">Field Trainers &amp; Mentorship</span>
+                                <span class="breakdown-amount">₹1,786 (26%)</span>
+                            </div>
+                            <div class="breakdown-bar"><div class="fill" style="width: 26%;"></div></div>
+
+                            <div class="breakdown-stat-row">
+                                <span class="breakdown-category">Tech Modules &amp; Inter-School Events</span>
+                                <span class="breakdown-amount">₹1,380 (20%)</span>
+                            </div>
+                            <div class="breakdown-bar"><div class="fill" style="width: 20%;"></div></div>
+
+                            <div class="breakdown-stat-row">
+                                <span class="breakdown-category">Administration &amp; Field Support</span>
+                                <span class="breakdown-amount">₹934 (13%)</span>
+                            </div>
+                            <div class="breakdown-bar"><div class="fill" style="width: 13%;"></div></div>
+                        </div>
+                        <div class="cost-note">Every ₹7,000 provides full 365-day access, training, and permanent hardware to 1 government school learner.</div>
+                    </div>
+
+                    <div class="trust-card">
+                        <div class="trust-header">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                            <h4>Trust &amp; Compliance Dossier</h4>
+                        </div>
+                        <ul class="dossier-items">
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <strong>20+ Years</strong> of unbroken grassroots delivery in MP</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <strong>Audited Annually</strong> by Manish K Ramawati &amp; Co., Chartered Accountants</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <strong>Reliance Power CSR Partner</strong> for Sasan UMPP project</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <strong>60% Female Participation</strong> mandate across all student cohorts</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <strong>100% Tax Exemption</strong> under Section 80G</li>
+                        </ul>
+                    </div>
+
+                    <div class="trust-card contact-help-box">
+                        <div class="trust-header">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            <h4>Donation Support Desk</h4>
+                        </div>
+                        <p>Need assistance or wire transfer confirmation? Reach our Program Office directly:</p>
+                        <p class="help-contact">
+                            <strong>Mr. Pramendra Kumar Singh</strong><br>
+                            Secretary &amp; Program Director<br>
+                            Email: <a href="mailto:Sahbhagita_ngo@rediffmail.com">Sahbhagita_ngo@rediffmail.com</a><br>
+                            Singrauli, Madhya Pradesh - 486886
+                        </p>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ==================== PRINTABLE 80G RECEIPT MODAL ==================== -->
+    <div class="receipt-modal-overlay" id="receiptModal" role="dialog" aria-modal="true" aria-labelledby="receiptTitle" aria-hidden="true">
+        <div class="receipt-container">
+            <div class="receipt-actions no-print">
+                <button type="button" class="btn btn-primary" id="printReceiptBtn"><i class="fas fa-print" aria-hidden="true"></i> Print / Save PDF</button>
+                <button type="button" class="btn btn-outline" id="closeReceiptBtn"><i class="fas fa-times" aria-hidden="true"></i> Close</button>
+            </div>
+
+            <!-- THE OFFICIAL RECEIPT DOCUMENT -->
+            <div class="official-receipt-doc" id="officialReceiptDoc">
+                <div class="receipt-header-banner">
+                    <img src="images/logo_white.png" alt="Logo" class="receipt-logo" width="60" height="65">
+                    <div class="receipt-org-info">
+                        <h2>SAHBHAGITA SHAHRI &amp; GRAMIN VIKAS SAMITI</h2>
+                        <p class="reg-sub">Reg. No: 05/25/04/06745/06 | Madhya Pradesh Society Registrikaran Adhiniyam, 1973</p>
+                        <p class="addr-sub">Ward No. 31, Gram Harrai, Post Baidhan, Singrauli, Madhya Pradesh - 486886</p>
+                        <p class="contacts-sub">Email: Sahbhagita_ngo@rediffmail.com | NITI Aayog Darpan: MP/2025/0702269</p>
+                    </div>
+                </div>
+
+                <div class="receipt-title-bar">
+                    <h3>DONATION RECEIPT &amp; 80G TAX EXEMPTION CERTIFICATE</h3>
+                    <div class="receipt-meta-row">
+                        <span><strong>Receipt No:</strong> <span id="r_receiptNumber">SHB-2026-0001</span></span>
+                        <span><strong>Date:</strong> <span id="r_receiptDate">09 Nov 2026</span></span>
+                    </div>
+                </div>
+
+                <div class="tax-clearance-box">
+                    <p>Donations to Sahabhagita Shahri &amp; Gramin Vikas Samiti are eligible for tax deduction under <strong>Section 80G</strong> of the Income Tax Act, 1961.</p>
+                    <div class="tax-codes-grid">
+                        <div><strong>80G Registration:</strong> AACAS8949KF20214</div>
+                        <div><strong>Section 12A Registration:</strong> ITBA/EXM/S/12A/2021-22/1036077583(1)</div>
+                        <div><strong>Organization PAN:</strong> AACAS8949K</div>
+                        <div><strong>MCA CSR-1 Reg:</strong> CSR00094897</div>
+                    </div>
+                </div>
+
+                <table class="receipt-details-table">
+                    <tr>
+                        <td class="col-lbl">Received With Thanks From:</td>
+                        <td class="col-val"><strong id="r_donorName">Rajesh Sharma</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="col-lbl">Donor PAN Number:</td>
+                        <td class="col-val"><strong id="r_donorPan">ABCDE1234F</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="col-lbl">Donor Address:</td>
+                        <td class="col-val" id="r_donorAddress">123 Civil Lines, Bhopal, MP</td>
+                    </tr>
+                    <tr>
+                        <td class="col-lbl">Donor Contact:</td>
+                        <td class="col-val"><span id="r_donorEmail">donor@example.com</span> | <span id="r_donorPhone">+91 9876543210</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-lbl">Amount Donated:</td>
+                        <td class="col-val"><span class="highlight-amt-receipt">₹<span id="r_donorAmount">7,000</span></span> (<span id="r_donorAmountWords">Seven Thousand Rupees Only</span>)</td>
+                    </tr>
+                    <tr>
+                        <td class="col-lbl">Transaction Reference / UTR:</td>
+                        <td class="col-val"><code id="r_donorUtr">UPI-431289123456</code></td>
+                    </tr>
+                    <tr>
+                        <td class="col-lbl">Program Supported:</td>
+                        <td class="col-val">Project Pratham Pratibha (STEM Innovation Labs for Government Schools)</td>
+                    </tr>
+                </table>
+
+                <div class="receipt-footer-signatures">
+                    <div class="seal-box">
+                        <div class="stamp-circle">
+                            <span>SAHBHAGITA</span>
+                            <small>SINGRAULI (M.P.)</small>
+                            <small>REG: 2006</small>
+                        </div>
+                    </div>
+                    <div class="signature-box">
+                        <div class="sign-line"></div>
+                        <p class="signatory-name"><strong>Mr. Pramendra Kumar Singh</strong></p>
+                        <p class="signatory-title">Secretary &amp; Program Director</p>
+                        <p class="signatory-org">Sahabhagita Shahri &amp; Gramin Vikas Samiti</p>
+                    </div>
+                </div>
+
+                <div class="receipt-legal-fineprint">
+                    <p>* This receipt is computer-generated and verified against Sahabhagita books of accounts. Retain this certificate for filing Income Tax Return claiming deduction under Section 80G.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="images/logo_white.png" alt="Sahabhagita Logo" width="40" height="44">
+                        <div>
+                            <span class="footer-name">Sahabhagita</span>
+                            <span class="footer-full-name">Shahri &amp; Gramin Vikas Samiti</span>
+                        </div>
+                    </div>
+                    <p>Building lasting self-reliance among underserved communities since 2004. Partnership, shared responsibility, and collective action.</p>
+                </div>
+                <div class="footer-links-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#programs">Programs</a></li>
+                        <li><a href="index.html#impact">Impact</a></li>
+                        <li><a href="donate.html">Donate Active</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-section">
+                    <h4>Tax Exemption</h4>
+                    <ul>
+                        <li><span class="text-white">Section 80G: AACAS8949KF20214</span></li>
+                        <li><span class="text-white">Section 12A Approved</span></li>
+                        <li><span class="text-white">CSR-1: CSR00094897</span></li>
+                        <li><span class="text-white">NGO Darpan: MP/2025/0702269</span></li>
+                    </ul>
+                </div>
+                <div class="footer-links-section">
+                    <h4>Contact Us</h4>
+                    <p class="text-muted-white">Singrauli, Madhya Pradesh - 486886<br>
+                    Email: Sahbhagita_ngo@rediffmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sahabhagita Shahri &amp; Gramin Vikas Samiti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- QR Code Generator & Scripts -->
+    <script src="qrcode.min.js"></script>
+    <script src="donate.js"></script>
+</body>
+</html>

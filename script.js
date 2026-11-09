@@ -315,14 +315,9 @@
                     return;
                 }
 
-                // All valid — show confirmation with sanitized data
-                var sanitizedAmount = Security.sanitize(parseInt(amount, 10).toLocaleString('en-IN'));
-                showModal('Thank you for your generous donation of \u20B9' + sanitizedAmount + '! We will send your 80G tax receipt to your email address shortly.');
-                donateForm.reset();
-                // Re-set default active button
-                amountBtns.forEach(function (b) { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
-                amountBtns[2].classList.add('active');
-                amountBtns[2].setAttribute('aria-pressed', 'true');
+                // All valid — redirect to active payment portal with pre-filled parameters
+                var amtNum = parseInt(amount, 10);
+                window.location.href = 'donate.html?amount=' + encodeURIComponent(amtNum);
             });
         }
 
